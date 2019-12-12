@@ -1,22 +1,38 @@
-# PageMaker-nodejs-library
-Nodejs library to implement pagination on the applications
+# MakerPage
+MarkerPage is a npm library to implement simple pagination o JavaScript applications.
 
-This library allows the users implements pagination of any array of elements based on the page number and the limit of elements per page
+With MarkerPage you can implement a pagination out of any array of elements based on the page number and the limit of elements per page.
 
-There is only one function called makePagination, that receives on it's arguments the array to paginate, the page number and the total elements
-of the page.
+## Usage
+With npm installed, run
+```
+npm install makerpage
+```
 
-The return of the function is a object:
-  results = {
-            content:content,
-            totalPages:totalPage,
-            nextPage: nextPage,
-            actualPage:startParsed,
-            prevPage: previousPage,
-        }
-        
-   content : Contents of the page
-   totalPages: Total pages based on the array,
-   nextPage: Next page based on the actualPage, it may be null if the the number of the nextPage be greater than totalPages
-   actualPage: Actual page requested
-   PrevPage: Previous page based on the actualPage
+```javascript
+require('markerpage');
+
+const pageableList = markerpage.makePagination(resultSet, start,end);
+```
+
+## Parameters
+To create a pagination object you just need to call the "makePagination" function, and that receives as arguments the <b>array to paginate</b>, the <b>page number</b> and the <b>total elements</b> of the page.
+
+The return pageable object:
+``` javascript
+const results = {
+  content:content,
+  totalPages:totalPage,
+  nextPage: nextPage,
+  actualPage:startParsed,
+  prevPage: previousPage,
+}
+```
+* <b>content</b> : Page content.
+* <b>totalPages</b>: Total pages based on the array.
+* <b>nextPage</b>: Next page based on the actualPage, it may be null if the the number of the nextPage be greater than totalPages.
+* <b>actualPage</b>: Actual page requested.
+* <b>PrevPage</b>: Previous page based on the actualPage.
+
+## Authors
+* [Raphael Dias](https://github.com/RaphaelDiasc21) - RaphaelDiasc21
