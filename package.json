@@ -1,0 +1,22 @@
+{
+  "name": "makerpage",
+  "version": "1.0.0",
+  "description": "Pagination generator library based on an array of results, start index and limit to page of elements into a page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaphaelDiasc21/PageMaker-nodejs-library.git"
+  },
+  "keywords": [
+    "Pagination"
+  ],
+  "author": "Raphael Dias da Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaphaelDiasc21/PageMaker-nodejs-library/issues"
+  },
+  "homepage": "https://github.com/RaphaelDiasc21/PageMaker-nodejs-library#readme"
+}
